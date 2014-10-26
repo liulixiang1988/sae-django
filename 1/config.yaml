@@ -1,5 +1,8 @@
 name: liulixianglife
 version: 1
+libraries:
+- name: django
+  version: "1.7.1"
 
 handlers: 
 - url: /static
