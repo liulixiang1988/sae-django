@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>添加账单</title>
+
+    <link href="{% static 'account/css/gridforms.css' %}" rel="stylesheet"/>
+
+</head>
+<body>
+<form class="grid-form">
+    <fieldset>
+        <legend>账单</legend>
+        <div data-row-span="2">
+            <div data-field-span="1">
+                <label>金额</label>
+                <input type="text">
+            </div>
+            <div data-field-span="1">
+                <label>时间</label>
+                <input type="text">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<script type="application/javascript" src="{% static 'account/js/respond.min.js' %}"></script>
+<script type="application/javascript" src="{% static 'account/js/gridforms.js' %}"></script>
+</body>
+</html>
